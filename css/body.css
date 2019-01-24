@@ -1,0 +1,79 @@
+body {
+    background: url("../assets/img/pinkWall.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: inherit;
+    background-blend-mode: inherit;
+}
+
+.imageContainer {
+    display: inline-flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    width: 32%;
+    justify-content: space-evenly;
+ }
+ 
+ .image {
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    margin: 0 auto;
+ }
+ 
+ .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: var(--gray);
+ }
+ 
+ .imageContainer:hover .overlay {
+    opacity: 0.9;
+ }
+ 
+ .text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: var(--headerFont);
+ }
+ 
+ @media screen and (max-width:650px) {
+    .imageContainer {
+        display: block;
+        margin: 2vh auto;
+        width: 85%;
+    }
+ }
+
+ #about {
+    margin-block-end: 35vh;
+ }
+
+ #projects {
+    margin-block-end: 40vh;
+ }
+
+ #contact {
+    margin-block-end: 40vh
+ }
+
+ p {
+    color:white;
+ }

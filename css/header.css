@@ -1,0 +1,31 @@
+.jumbotron {
+    color: white;
+    text-align: center;
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 30px;
+    background: url("../assets/img/pinkRedLights.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+/*
+.display-4 {
+    background-color: black;
+    
+}
+
+p {
+    background-color: black;
+    background-size: auto;
+}
+/*
+.jumbotron {
+    background-image: url("");
+    background-size: cover;
+    background
+   }
+   */
+
+
+
